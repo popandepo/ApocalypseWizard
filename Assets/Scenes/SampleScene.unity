@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30754}
   - component: {fileID: 30755}
+  - component: {fileID: 30756}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: Untagged
@@ -168,6 +169,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2269db3c9b60de248ab30fef04ad3616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &30756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a051359d91c234caf5559023ed39bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ticks: 0
 --- !u!1 &192165142
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -214.3, y: 33.200012}
+  m_AnchoredPosition: {x: -209.5, y: 232.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718946036
@@ -536,7 +550,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '"I am gay" - Daniel "Gay" Kendraski 2086'
+  m_Text: hello
 --- !u!222 &718946037
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -725,7 +739,7 @@ GameObject:
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
