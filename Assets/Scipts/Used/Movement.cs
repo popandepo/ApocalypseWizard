@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed = 5f;
-    [SerializeField] private Rigidbody2D rigidBody;
+    [SerializeField] private GameObject owner;
+
+    private float movementSpeed;
+    private Rigidbody2D rigidBody;
 
     Vector2 movement;
+
+    private void Awake()
+    {
+        movementSpeed = owner.GetComponent<Variables>().movementSpeed;
+        rigidBody = owner.GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {

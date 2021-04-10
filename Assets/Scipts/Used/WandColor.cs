@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class WandColor : MonoBehaviour
 {
-    [SerializeField] private Color shaftColor;
-    [SerializeField] private Color tipColor;
+    [SerializeField] private GameObject owner;
+
+    private Color shaftColor;
+    private Color tipColor;
 
     private void Awake()
     {
+        shaftColor = owner.GetComponent<Variables>().wandShaftColor;
+        tipColor = owner.GetComponent<Variables>().wandTipColor;
+
         SpriteRenderer[] spriteRendererList = GetComponentsInChildren<SpriteRenderer>();
         foreach (var entry in spriteRendererList)
         {

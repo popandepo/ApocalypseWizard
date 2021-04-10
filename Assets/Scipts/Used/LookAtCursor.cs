@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class LookAtCursor : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 15f;
+    [SerializeField] private GameObject owner;
+
+    private float rotationSpeed = 15f;
+
+    private void Awake()
+    {
+        rotationSpeed = owner.GetComponent<Variables>().rotationSpeed;
+    }
+
 
     void FixedUpdate()
     {
