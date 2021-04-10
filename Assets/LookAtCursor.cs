@@ -5,7 +5,8 @@ using UnityEngine;
 public class LookAtCursor : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 15f;
-    void Update()
+
+    void FixedUpdate()
     {
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
