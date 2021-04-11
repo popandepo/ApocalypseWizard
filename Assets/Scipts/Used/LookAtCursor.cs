@@ -8,7 +8,7 @@ public class LookAtCursor : MonoBehaviour
 
     private void Awake()
     {
-        rotationSpeed = owner.GetComponent<Variables>().rotationSpeed;
+        rotationSpeed = owner.GetComponent<PlayerVariables>().rotationSpeed;
     }
 
 

@@ -153,6 +153,7 @@ Transform:
   - {fileID: 1584334286}
   - {fileID: 89549115}
   - {fileID: 1471018120}
+  - {fileID: 1204587753}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -284,7 +285,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1391823268463776538, guid: 6ab04413d74982c4e9b12a8d8b4d95c4, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Fire Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1391823268463776541, guid: 6ab04413d74982c4e9b12a8d8b4d95c4, type: 3}
       propertyPath: m_RootOrder
@@ -350,7 +351,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1391823268463776538, guid: 6ab04413d74982c4e9b12a8d8b4d95c4, type: 3}
       propertyPath: m_Name
-      value: Enemy (2)
+      value: Slime Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1391823268463776541, guid: 6ab04413d74982c4e9b12a8d8b4d95c4, type: 3}
       propertyPath: m_RootOrder
@@ -642,6 +643,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1204587752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204587753}
+  m_Layer: 0
+  m_Name: Bullets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1204587753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204587752}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1991129}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1284674104
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +826,7 @@ GameObject:
   - component: {fileID: 1471018121}
   - component: {fileID: 1471018123}
   - component: {fileID: 1471018124}
+  - component: {fileID: 1471018125}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -946,7 +978,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owner: {fileID: 1471018117}
   bullet: {fileID: 8496108272877360739, guid: 18e7c645b4437c0478d05a09344b712d, type: 3}
+  holder: {fileID: 1204587752}
   spawnObject: {fileID: 958159934}
+--- !u!58 &1471018125
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471018117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1527962833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,7 +1134,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1391823268463776538, guid: 6ab04413d74982c4e9b12a8d8b4d95c4, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Water Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1391823268463776541, guid: 6ab04413d74982c4e9b12a8d8b4d95c4, type: 3}
       propertyPath: m_RootOrder

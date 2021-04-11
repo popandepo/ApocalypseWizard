@@ -9,8 +9,8 @@ public class WandColor : MonoBehaviour
 
     private void Awake()
     {
-        shaftColor = owner.GetComponent<Variables>().wandShaftColor;
-        tipColor = owner.GetComponent<Variables>().wandTipColor;
+        shaftColor = owner.GetComponent<PlayerVariables>().wandShaftColor;
+        tipColor = owner.GetComponent<PlayerVariables>().wandTipColor;
 
         SpriteRenderer[] spriteRendererList = GetComponentsInChildren<SpriteRenderer>();
         foreach (var entry in spriteRendererList)

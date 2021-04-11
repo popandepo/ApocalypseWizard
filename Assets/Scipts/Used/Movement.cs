@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
-        movementSpeed = owner.GetComponent<Variables>().movementSpeed;
+        movementSpeed = owner.GetComponent<PlayerVariables>().movementSpeed;
         rigidBody = owner.GetComponent<Rigidbody2D>();
     }
 
