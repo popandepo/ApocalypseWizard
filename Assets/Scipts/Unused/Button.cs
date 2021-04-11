@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Button : MonoBehaviour
@@ -10,7 +8,7 @@ public class Button : MonoBehaviour
     {
         Debug.Log("start" + this.name);
     }
-    private void OnMouseUpAsButton() 
+    private void OnMouseUpAsButton()
     {
         Debug.Log("button detected press");
 

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -9,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     //[SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private float movementSpeed;
     [SerializeField] private float rotationSpeed;
-    
+
     private void Update()
     {
         Tools.TurnTowardsPoint(transform, target.transform.position, rotationSpeed);

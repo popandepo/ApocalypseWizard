@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LookAtCursor : MonoBehaviour
@@ -19,5 +17,5 @@ public class LookAtCursor : MonoBehaviour
         Tools.TurnTowardsPoint(transform, Camera.main.ScreenToWorldPoint(Input.mousePosition), rotationSpeed);
     }
 
-    
+
 }
