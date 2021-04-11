@@ -834,7 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2245acba579c0a4abbda5111b31d79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visibleMouse: 0
+  visibleMouse: 1
 --- !u!212 &1584334288
 SpriteRenderer:
   m_ObjectHideFlags: 0
