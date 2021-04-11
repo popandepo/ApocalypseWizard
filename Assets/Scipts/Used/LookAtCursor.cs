@@ -16,9 +16,8 @@ public class LookAtCursor : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        Tools.TurnTowardsPoint(transform, Camera.main.ScreenToWorldPoint(Input.mousePosition), rotationSpeed);
     }
+
+    
 }
