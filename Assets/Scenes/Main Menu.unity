@@ -154,6 +154,7 @@ Transform:
   - {fileID: 89549115}
   - {fileID: 1471018120}
   - {fileID: 1204587753}
+  - {fileID: 1527962834}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -828,7 +829,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 833e3b0145ea5d44390f46d9bfd8caf4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1288,7 +1289,7 @@ MonoBehaviour:
   health: 100
   movementSpeed: 30
   rotationSpeed: 15
-  wandShaftColor: {r: 0.42745098, g: 0.21176471, b: 0, a: 1}
+  wandShaftColor: {r: 0.35686275, g: 0.16373739, b: 0.011764705, a: 1}
   wandTipColor: {r: 128, g: 0, b: 0, a: 1}
 --- !u!114 &1471018124
 MonoBehaviour:
@@ -1302,9 +1303,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b6eaecf99e015e44a41259c30d1976f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  owner: {fileID: 1471018117}
-  bullet: {fileID: 8496108272877360739, guid: 18e7c645b4437c0478d05a09344b712d, type: 3}
-  holder: {fileID: 1204587752}
+  bulletType: 1
+  normalBullet: {fileID: 8496108272877360739, guid: 18e7c645b4437c0478d05a09344b712d, type: 3}
+  bulletHolder: {fileID: 1204587752}
   spawnObject: {fileID: 958159934}
 --- !u!1 &1527962833
 GameObject:
@@ -1329,15 +1330,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527962833}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1466908776}
   - {fileID: 1313745780}
   - {fileID: 527770533}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1991129}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1584334285
 GameObject:

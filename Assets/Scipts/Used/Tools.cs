@@ -25,7 +25,7 @@ public static class Tools
 
             foreach (var item in matches)
             {
-                if (Vector2.Distance(start.transform.position, item.transform.position) < Vector2.Distance(start.transform.position, output.transform.position))
+                if (Vector2.Distance(start.transform.position, item.transform.position) < Vector2.Distance(start.transform.position, match.transform.position))
                 {
                     match = item;
                 }

@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class ShootBullet : MonoBehaviour
 {
-    [SerializeField] private BulletType bulletType;
-    [SerializeField] private GameObject holder;
+    [SerializeField] private BulletType bulletType = BulletType.Normal;
+    [SerializeField] private GameObject normalBullet;
+    [SerializeField] private GameObject bulletHolder;
     [SerializeField] private GameObject spawnObject;
 
     private Vector2 position;
@@ -39,8 +40,8 @@ public class ShootBullet : MonoBehaviour
             switch (bulletType)
             {
                 case BulletType.Normal:
-                    var blt = Instantiate(GameObject.Find("Pfb.Bullet"), position, owner.transform.rotation);
-                    blt.transform.parent = holder.transform;
+                    var blt = Instantiate(normalBullet, position, owner.transform.rotation);
+                    blt.transform.parent = bulletHolder.transform;
                     break;
                 case BulletType.Penetrating:
                     Debug.Log("penetrating bullet");
