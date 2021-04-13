@@ -9,6 +9,9 @@ public class CanBeDamaged : MonoBehaviour
             Debug.Log($"hit! (line: 9 object: {name} component: {this.GetType().ToString()})");
             gameObject.GetComponent<EnemyVariables>().health -= collision.gameObject.GetComponent<CanDamage>().damage[0];
 
+            Controller.allObjects.Remove(collision.gameObject);
+            Controller.allObjects.Remove(gameObject);
+
             collision.gameObject.SetActive(false);
             gameObject.SetActive(false);
         }

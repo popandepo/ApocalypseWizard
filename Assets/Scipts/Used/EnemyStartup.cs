@@ -9,7 +9,7 @@ public class EnemyStartup : MonoBehaviour
 
     private void Awake()
     {
-        Controller.enemies.Add(gameObject);
+        Controller.allObjects.Add(gameObject);
         switch (enemyType)
         {
             case EnemyType.Test:

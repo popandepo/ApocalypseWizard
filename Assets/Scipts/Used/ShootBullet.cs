@@ -41,7 +41,6 @@ public class ShootBullet : MonoBehaviour
                 case BulletType.Normal:
                     var blt = Instantiate(GameObject.Find("Pfb.Bullet"), position, owner.transform.rotation);
                     blt.transform.parent = holder.transform;
-                    Controller.bullets.Add(blt);
                     break;
                 case BulletType.Penetrating:
                     Debug.Log("penetrating bullet");

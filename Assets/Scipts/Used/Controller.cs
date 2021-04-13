@@ -3,7 +3,5 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    public static List<GameObject> enemies = new List<GameObject>();
-    public static List<GameObject> bullets = new List<GameObject>();
-
+    public static List<GameObject> allObjects = new List<GameObject>();
 }
