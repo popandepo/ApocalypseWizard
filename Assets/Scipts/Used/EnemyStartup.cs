@@ -9,6 +9,7 @@ public class EnemyStartup : MonoBehaviour
 
     private void Awake()
     {
+        Controller.enemies.Add(gameObject);
         switch (enemyType)
         {
             case EnemyType.Test:
@@ -24,6 +25,7 @@ public class EnemyStartup : MonoBehaviour
                 break;
             default:
                 break;
+
         }
     }
 }

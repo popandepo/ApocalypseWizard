@@ -9,4 +9,23 @@ public static class Tools
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
+
+
+    public static GameObject GetClosestGameObject(GameObject start, GameObject target = null)
+    {
+        GameObject[] objects = GameObject.FindGameObjectsWithTag(target.tag);
+
+    }
+
+
+    public static float GetDistanceToObject(GameObject start, GameObject end)
+    {
+        return GetDistanceToPoint(start.transform.position, end.transform.position);
+    }
+
+
+    public static float GetDistanceToPoint(Vector3 start, Vector3 end)
+    {
+        return Vector3.Distance(start, end);
+    }
 }
