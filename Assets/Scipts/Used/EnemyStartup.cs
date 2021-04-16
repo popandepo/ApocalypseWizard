@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class EnemyStartup : MonoBehaviour
 {
-    [SerializeField] private GameObject owner;
+    private GameObject owner;
     [SerializeField] private EnemyType enemyType;
     [SerializeField] private int Health;
     [SerializeField] private int Attack;
 
     private void Awake()
     {
+        owner = gameObject;
         Controller.allObjects.Add(gameObject);
         switch (enemyType)
         {

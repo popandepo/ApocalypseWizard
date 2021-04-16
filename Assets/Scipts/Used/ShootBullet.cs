@@ -3,9 +3,9 @@ using UnityEngine;
 public class ShootBullet : MonoBehaviour
 {
     [SerializeField] private BulletType bulletType = BulletType.Normal;
-    [SerializeField] private GameObject normalBullet;
     [SerializeField] private GameObject bulletHolder;
     [SerializeField] private GameObject spawnObject;
+    [SerializeField] private GameObject normalBullet;
 
     private Vector2 position;
     private GameObject owner;

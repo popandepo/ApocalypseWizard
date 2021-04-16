@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private GameObject owner;
+    private GameObject owner;
 
     private float movementSpeed;
     private Rigidbody2D rigidBody;
@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
+        owner = gameObject;
         movementSpeed = owner.GetComponent<PlayerVariables>().movementSpeed;
         rigidBody = owner.GetComponent<Rigidbody2D>();
     }

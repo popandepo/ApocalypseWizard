@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class LookAtCursor : MonoBehaviour
 {
-    [SerializeField] private GameObject owner;
+    private GameObject owner;
 
     private float rotationSpeed = 15f;
 
     private void Awake()
     {
+        owner = gameObject;
         rotationSpeed = owner.GetComponent<PlayerVariables>().rotationSpeed;
     }
 

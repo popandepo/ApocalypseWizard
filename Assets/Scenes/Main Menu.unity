@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1991129}
+  - component: {fileID: 1991130}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -158,6 +159,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1991130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd0dd17a8091a842a17e379b842aec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &89549112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d9be3a29498424e8031fd0abd85c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  owner: {fileID: 1471018117}
 --- !u!70 &1471018119
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1273,7 +1285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b34b602b16d464cbb8b696cf661070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  owner: {fileID: 1471018117}
 --- !u!114 &1471018123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,9 +1315,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletType: 1
-  normalBullet: {fileID: 8496108272877360739, guid: 18e7c645b4437c0478d05a09344b712d, type: 3}
   bulletHolder: {fileID: 1204587752}
   spawnObject: {fileID: 958159934}
+  normalBullet: {fileID: 8496108272877360739, guid: 18e7c645b4437c0478d05a09344b712d, type: 3}
 --- !u!1 &1527962833
 GameObject:
   m_ObjectHideFlags: 0

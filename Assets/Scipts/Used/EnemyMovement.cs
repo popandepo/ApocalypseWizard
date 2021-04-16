@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private GameObject owner;
     [SerializeField] private GameObject target;
-    //[SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private float movementSpeed;
     [SerializeField] private float rotationSpeed;
+    private GameObject owner;
+
+    private void Awake()
+    {
+        owner = gameObject;
+    }
 
     private void Update()
     {

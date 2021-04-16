@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     }
     private void LateUpdate()
     {
-        transform.position += transform.right.normalized * Time.deltaTime * bulletSpeed;
+        gameObject.GetComponent<Rigidbody2D>().velocity = transform.right.normalized * bulletSpeed;
+        //transform.position += transform.right.normalized * Time.deltaTime * bulletSpeed;
     }
 }
