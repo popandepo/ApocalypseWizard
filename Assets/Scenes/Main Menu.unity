@@ -1198,6 +1198,7 @@ GameObject:
   - component: {fileID: 1471018118}
   - component: {fileID: 1471018122}
   - component: {fileID: 1471018121}
+  - component: {fileID: 1471018125}
   - component: {fileID: 1471018123}
   - component: {fileID: 1471018124}
   - component: {fileID: 1471018119}
@@ -1230,7 +1231,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1318,6 +1319,19 @@ MonoBehaviour:
   bulletHolder: {fileID: 1204587752}
   spawnObject: {fileID: 958159934}
   normalBullet: {fileID: 8496108272877360739, guid: 18e7c645b4437c0478d05a09344b712d, type: 3}
+--- !u!114 &1471018125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471018117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1237a4ffbb44ef43ac421579704586c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: []
 --- !u!1 &1527962833
 GameObject:
   m_ObjectHideFlags: 0
