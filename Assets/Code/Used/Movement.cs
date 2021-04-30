@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private GameObject owner;
+    private Vector2 movement;
 
     private float movementSpeed;
+    private GameObject owner;
     private Rigidbody2D rigidBody;
-
-    Vector2 movement;
 
     private void Awake()
     {
@@ -16,7 +15,7 @@ public class Movement : MonoBehaviour
         rigidBody = owner.GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");

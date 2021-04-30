@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Mouse : MonoBehaviour
 {
-    [SerializeField] private bool visibleMouse = true;
+    [SerializeField] private readonly bool visibleMouse = true;
+
     private void Awake()
     {
         Cursor.visible = visibleMouse;

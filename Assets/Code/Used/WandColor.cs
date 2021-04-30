@@ -12,17 +12,11 @@ public class WandColor : MonoBehaviour
         shaftColor = owner.GetComponent<PlayerVariables>().wandShaftColor;
         tipColor = owner.GetComponent<PlayerVariables>().wandTipColor;
 
-        SpriteRenderer[] spriteRendererList = GetComponentsInChildren<SpriteRenderer>();
-        foreach (var entry in spriteRendererList)
+        var spriteRendererList = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer entry in spriteRendererList)
         {
-            if (entry.gameObject.name.Contains("Shaft"))
-            {
-                entry.color = shaftColor;
-            }
-            if (entry.gameObject.name.Contains("Tip"))
-            {
-                entry.color = tipColor;
-            }
+            if (entry.gameObject.name.Contains("Shaft")) entry.color = shaftColor;
+            if (entry.gameObject.name.Contains("Tip")) entry.color = tipColor;
         }
     }
 }

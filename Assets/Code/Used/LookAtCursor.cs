@@ -13,10 +13,8 @@ public class LookAtCursor : MonoBehaviour
     }
 
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         Tools.TurnTowardsPoint(transform, Camera.main.ScreenToWorldPoint(Input.mousePosition), rotationSpeed);
     }
-
-
 }

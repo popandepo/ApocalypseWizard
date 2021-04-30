@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private GameObject target;
     [SerializeField] private float movementSpeed;
-    [SerializeField] private float rotationSpeed;
     private GameObject owner;
+    [SerializeField] private float rotationSpeed;
+    [SerializeField] private GameObject target;
 
     private void Awake()
     {

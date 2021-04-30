@@ -3,5 +3,5 @@
     Normal,
     Fire,
     Water,
-    Earth,
+    Earth
 }

@@ -7,5 +7,5 @@
     Homing,
     Arcing,
 
-    End,
+    End
 }

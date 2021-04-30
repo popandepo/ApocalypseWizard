@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     {
         Controller.allObjects.Add(gameObject);
     }
+
     private void LateUpdate()
     {
         gameObject.GetComponent<Rigidbody2D>().velocity = transform.right.normalized * bulletSpeed;

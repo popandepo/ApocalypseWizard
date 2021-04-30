@@ -6,8 +6,9 @@ public class Button : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("start" + this.name);
+        Debug.Log("start" + name);
     }
+
     private void OnMouseUpAsButton()
     {
         Debug.Log("button detected press");

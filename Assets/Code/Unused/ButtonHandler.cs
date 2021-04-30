@@ -13,8 +13,6 @@ public class ButtonHandler : MonoBehaviour
                 break;
             case ButtonEnum.Quit:
                 break;
-            default:
-                break;
         }
     }
 }

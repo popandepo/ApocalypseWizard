@@ -10,15 +10,11 @@ public class Controller : MonoBehaviour
     private void Update()
     {
         string text = "";
-        foreach (var obj in allObjects)
-        {
-            text += obj.name + "\n";
-        }
+        foreach (GameObject obj in allObjects) text += obj.name + "\n";
         if (text != debugText)
         {
             Debug.Log(text);
             debugText = text;
         }
     }
-
 }

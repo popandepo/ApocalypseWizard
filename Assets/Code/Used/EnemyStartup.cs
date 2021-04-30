@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class EnemyStartup : MonoBehaviour
 {
-    private GameObject owner;
+    [SerializeField] private int Attack;
     [SerializeField] private EnemyType enemyType;
     [SerializeField] private int Health;
-    [SerializeField] private int Attack;
+    private GameObject owner;
 
     private void Awake()
     {
@@ -24,9 +24,6 @@ public class EnemyStartup : MonoBehaviour
             case EnemyType.Slime:
                 owner.GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
                 break;
-            default:
-                break;
-
         }
     }
 }
