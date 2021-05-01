@@ -10,8 +10,10 @@ namespace Code.Classes
         {
             Name = name;
             Amount = amount;
+            //Test = BulletType.Arcing;
         }
 
+        //public Enum Test { get; set; }
         public string Name { get; set; }
         public int Amount { get; set; }
     }
