@@ -1,20 +1,24 @@
-﻿using System;
-using Code.Interfaces;
+﻿using Code.Interfaces;
+using System;
 
 namespace Code.Classes
 {
     [Serializable]
     public class Item : IItem
     {
-        public Item(string name = "Empty slot", int amount = 0)
+        public Enum Name { get; set; }
+        public int Amount { get; set; }
+        public Enum ItemType { get; set; }
+        public Enum MainCategory { get; set; }
+        public Enum SubCategory { get; set; }
+
+        public Item(Enum name = null, int amount = -1, Enum itemType = null, Enum mainCategory = null, Enum subCategory = null)
         {
             Name = name;
             Amount = amount;
-            //Test = BulletType.Arcing;
+            ItemType = itemType;
+            MainCategory = mainCategory;
+            SubCategory = subCategory;
         }
-
-        //public Enum Test { get; set; }
-        public string Name { get; set; }
-        public int Amount { get; set; }
     }
 }

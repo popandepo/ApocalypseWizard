@@ -1,4 +1,5 @@
 using UnityEngine;
+using Assets.Code;
 
 public class ShootBullet : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class ShootBullet : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log(Assets.Code.Tools.CamelCaseToString(ItemList.ironSword.Name.ToString()));
             position = spawnObject.transform.transform.position;
             switch (bulletType)
             {
