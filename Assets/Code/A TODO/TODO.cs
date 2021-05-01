@@ -6,7 +6,9 @@ public class TODO : MonoBehaviour
 {
     /*Inventory system
     drag-and-drop
-    
+    when you "drag" an item, some icons appear for every possible inventory it can be in
+    if you "drop" the item gets put there
+
     autopickup into "incoming loot"
     filter system
     right click an item to get a dropdown menu
